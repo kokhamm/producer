@@ -1,0 +1,19 @@
+@import url(reset.css);
+@import url(nav-menu.css);
+@import url(main-block.css);
+@import url(forwho-block.css);
+@import url(learning-program.css);
+@import url(review-block.css);
+@import url(author.css);
+@import url(nav-bottom.css);
+
+html{
+	font-size: 10px;
+}
+
+.title{
+	text-align: center;
+	text-transform: uppercase;
+} 
+
+

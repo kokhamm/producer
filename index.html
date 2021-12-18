@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+	<title>Producer</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+
+</head>
+<body>
+
+	<!-- The Modal (contains the Sign Up form) -->
+	<div class="container">
+<div id="form_popup_bgid" class="form-popup-bg">
+  <div class="form-container">
+  	<img src="img/santa.png" class="santa">
+    <button id="btnCloseForm" class="close-button">X</button>
+    <h1 class="santa_header">Регистрация</h1>
+    <p class="santa_p">Наш менеджер свяжется с вами в течении одного робочего дня</p>
+    <form class="forms_wrap" action="">
+    	<div class="forms">
+      <div class="form-group">
+        <label for="">Имя</label>
+        <input required="Заполните это поле" type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="">E-Mail</label>
+        <input placeholder="необязательно" class="form-control" type="email" />
+      </div>
+      <div class="form-group">
+        <label for="">Телефон</label>
+        <input equired="Заполните это поле" class="form-control" type="tel" />
+      </div>
+      </div>
+      <button class="santa-btn"><span class="santa-btn_text">Отправить</span></button>
+    </form>
+  </div>
+</div>
+</div>
+
+	<div class="wrapper">
+        <section class="nav-main">
+		<div class="container">
+		<div class="nav">
+		
+		<h3 class="nav__logo-text">PROSMM</h3>	
+		<nav id="menu0" class="nav__menu">
+		<a class="nav__menu-link" href="#forwho" >Для кого курс</a>
+		<a class="nav__menu-link"href="#learning-program">Программа</a>
+		<a class="nav__menu-link"href="#review">Кейсы</a>
+		<a class="nav__menu-link"href="#author">Автор</a>
+		</nav>
+<nav role='navigation'>
+  <div id="menuToggle">
+    <input class="inp" type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a class="nav__menu-link" href="#forwho" onclick="toggle()"><li>Для кого курс</li></a>
+      <a class="nav__menu-link" href="#learning-program" onclick="toggle()"><li>Программа</li></a>
+      <a class="nav__menu-link" href="#review" onclick="toggle()"><li>Кейсы</li></a>
+      <a class="nav__menu-link" href="#author" onclick="toggle()"><li>Автор</li></a>
+    </ul>
+  </div>
+</nav>
+			<p class="nav__menu-startdate-text">
+			<span>30 Июля</span> <br>старт обучения
+		</p>
+		</div>
+		<div class="main">
+			<div class="main__headers-btn">
+				<h1 class="main_header">
+					Станьте продюсером<br>эксперта в Instagram
+				</h1>
+				<p class="main_sub-header">
+					И начните зарабатывать на запусках инфопродуктов<br>
+                    от 100 000 гривен в месяц по нашей методологии
+				</p>
+				<button class="main-btn" id="btnOpenForm" onclick="overflow()"><span class="main-btn_text">Зарегистрироваться</span></button>
+				    <div class="main__mini">
+				    <div class="main__mini_advantage">
+					    <img class="main__mini_advantage_icon" src="img/shop-icon.svg">
+					    <p class="main__mini_advantage_text">
+					    	Рассрочка на 2 года.<br>
+					    	<span class="main__mini_advantage_subtext">
+					    		Без комиссии, первый<br>платёж лишь через месяц
+					    	</span>
+					    </p>
+				    </div>
+				    <div class="main__mini_advantage">
+					    <img class="main__mini_advantage_icon" src="img/network-icon.svg">
+					    <p class="main__mini_advantage_text">
+					    	Своя база экспертов.<br>
+					    	<span class="main__mini_advantage_subtext">
+					    		Без комиссии, первый<br>платёж лишь через месяц
+					    	</span>
+					    </p>
+				    </div>
+				    <div class="main__mini_advantage">
+					    <img class="main__mini_advantage_icon" src="img/pencil-icon.svg">
+					    <p class="main__mini_advantage_text">
+					    	Теория + практика.<br>
+					    	<span class="main__mini_advantage_subtext">
+					    		Без комиссии, первый<br>платёж лишь через месяц
+					    	</span>
+					    </p>    
+				    </div>
+				    </div>
+				</div>
+				<div class="main__pic">
+					<img class="main__girl-pic" src="img/girl.png">
+				</div>
+			
+			</div>
+			</section>
+			<section class="forwho" id="forwho">
+				<div class="container">
+					<div class="forwho-block">
+						<h2 class="forwho-block_header">
+							Для кого подходит курс
+						</h2>
+						<div class="forwho-block__cards">
+						<div class="forwho-block__card">
+							<img class="forwho-block__card_img" src="img/expert-guys.png">
+							<h4 class="forwho-block__card_header">
+								Для начинающих
+							</h4>
+							<p class="forwho-block__card_text">
+								Вы отработаете все этапы, чтобы научиться новой профессии на практике
+							</p>
+						</div>
+						<div class="forwho-block__card">
+							<img class="forwho-block__card_img" src="img/smm-girl.png">
+							<h4 class="forwho-block__card_header">
+								Для SMM`щиков
+							</h4>
+							<p class="forwho-block__card_text">
+								Адаптируете свои навыки в новое русло и сможете взять проект уже на 3 неделе
+							</p>
+						</div>
+						<div class="forwho-block__card">
+							<img class="forwho-block__card_img" src="img/girl-street.png">
+							<h4 class="forwho-block__card_header">
+								Для экспертов
+							</h4>
+							<p class="forwho-block__card_text">
+								Сможете взять на себя задачи продюсера и провести запуск самостоятельно
+							</p>
+						</div>
+						<div class="forwho-block__card">
+							<img class="forwho-block__card_img" src="img/blogger-girl.png">
+							<h4 class="forwho-block__card_header">
+								Для блогеров
+							</h4>
+							<p class="forwho-block__card_text">
+								Разберётесь с воронкой запусков и найдете проверенного продюсера
+							</p>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="learning-program">
+				<div class="container">
+					<div class="learning-program">
+						<h2 class="learning-program_header">
+							Программа обучения: 12 месяцев
+						</h2>
+						<p class="learning-program_sub-header">
+							3 месяца практики под контролем наставника
+						</p>
+					  <div class="learning-program__slider">
+						<div class="learning-program__slide learning-program__slide1">
+							<p class="learning-program__slide_text-top">
+								Модуль 1
+							</p>
+							<p class="learning-program__slide_text-center">
+								База запусков
+							</p>
+							<p class="learning-program__slide_text-bottom">
+								Здесь мыопределимся с тем, что такое запуски и из чего они состоят. Вы выберете для себя подходящий формат: от запуска через сторис до автовебинарной воронки и премиум-клубов по подписке.
+							</p>
+						</div>
+					    <div class="learning-program__slide learning-program__slide2">
+					    	<p class="learning-program__slide_text-top">
+								Модуль 2 
+							</p>
+							<p class="learning-program__slide_text-center">
+								Эксперт и продукт
+							</p>
+							<p class="learning-program__slide_text-bottom">
+								В этом модуле Вы научитесь находить адекватных экспертов, с которыми будете работать годами. Выберете формат продукта, которые будете продавать, подготовите его структуру и MVP.
+							</p>
+					    </div>
+					    <div class="learning-program__slide learning-program__slide1">
+							<p class="learning-program__slide_text-top">
+								Модуль 3
+							</p>
+							<p class="learning-program__slide_text-center">
+								База запусков
+							</p>
+							<p class="learning-program__slide_text-bottom">
+								Здесь мыопределимся с тем, что такое запуски и из чего они состоят. Вы выберете для себя подходящий формат: от запуска через сторис до автовебинарной воронки и премиум-клубов по подписке.
+							</p>
+						</div>
+					    <div class="learning-program__slide learning-program__slide2">
+					    	<p class="learning-program__slide_text-top">
+								Модуль 4 
+							</p>
+							<p class="learning-program__slide_text-center">
+								Эксперт и продукт
+							</p>
+							<p class="learning-program__slide_text-bottom">
+								В этом модуле Вы научитесь находить адекватных экспертов, с которыми будете работать годами. Выберете формат продукта, которые будете продавать, подготовите его структуру и MVP.
+							</p>
+					    </div>
+					    <div class="learning-program__slide learning-program__slide1">
+							<p class="learning-program__slide_text-top">
+								Модуль 5
+							</p>
+							<p class="learning-program__slide_text-center">
+								База запусков
+							</p>
+							<p class="learning-program__slide_text-bottom">
+								Здесь мыопределимся с тем, что такое запуски и из чего они состоят. Вы выберете для себя подходящий формат: от запуска через сторис до автовебинарной воронки и премиум-клубов по подписке.
+							</p>
+						</div>
+					    <div class="learning-program__slide learning-program__slide2">
+					    	<p class="learning-program__slide_text-top">
+								Модуль 6 
+							</p>
+							<p class="learning-program__slide_text-center">
+								Эксперт и продукт
+							</p>
+							<p class="learning-program__slide_text-bottom">
+								В этом модуле Вы научитесь находить адекватных экспертов, с которыми будете работать годами. Выберете формат продукта, которые будете продавать, подготовите его структуру и MVP.
+							</p>
+					    </div>
+					    
+					  </div>
+					
+				    </div>
+				</div>
+				
+			</section>
+			<section id="review">
+				<div class="container">
+					<div class="review-block">
+						<h2 class="review-block__header">
+							Отзывы учеников предыдущих потоков
+						</h2>
+						<p class="review-block__subheader">
+							77% выпускников— действующие продюсеры
+						</p>
+						<a class="review-block__allreviews_link" href="index.html">
+							Все отзывы<img class="review-block__allreviews_link_icon" src="img/vector-right-icon.svg">
+						</a>
+						<div class="review-block__cards">
+							<div class="review-block__card">
+								<div class="review-block__card_wrap">
+								<img  class="" src="img/review-guy-first.png">
+								<p class="review-block__card_header">
+									Маркетинг
+								</p>
+								<p class="review-block__card_text">
+									Курс Алины заставил меня пересмотреть все свои привычки и побудил к стремлению значительно улучшить качество своей жизни, решительно сменив свою деятельность на Инстаграм-продюсирование.
+								</p>
+								<a class="review-block__card_person">
+									<img class="review-block__card_person_icon" src="img/vk-icon.svg"><span>Сергей Островский</span>
+								</a>
+							</div>
+							</div>
+							<div class="review-block__card">
+								<div class="review-block__card_wrap">
+								<img  class="" src="img/review-girl-second.png">
+								<p class="review-block__card_header">
+									Психология
+								</p>
+								<p class="review-block__card_text">
+									Признаюсь: изначально отнеслась скептически к профессии такой направленности, принять решение об оплате курса было непросто, но уже на первой неделе обучения все мои сомнения развеялись.
+								</p>
+								<a class="review-block__card_person">
+									<img class="review-block__card_person_icon" src="img/vk-icon.svg"><span>Евгения Алексеева</span>
+								</a>
+							</div>
+							</div>
+							<div class="review-block__card">
+								<div class="review-block__card_wrap">
+								<img  class="" src="img/review-boy-third.png">
+								<p class="review-block__card_header">
+									Финансы
+								</p>
+								<p class="review-block__card_text">
+									Я безмерно счастлив, что в 28 лет мне предоставилась возможность так быстро и эффективно ознакомиться с совершенно новой профессией и выйти на новый уровень дохода. Советую всем курс инстаграм-продюссирования.
+								</p>
+								<a class="review-block__card_person">
+									<img class="review-block__card_person_icon" src="img/vk-icon.svg"><span>Андрей Киреев</span>
+								</a>
+							</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="author-section" id="author">
+					<div class="container">
+						<div class="author">
+							<div class="author__wrap">
+								<div class="author__box">
+									<div class="author__photo-block">
+										<img class="author-photo" src="img/Alina-Kim.png">
+											<div class="author__photo-block_icons">
+												<a href=""><img src="img/vk-com2-icon.svg"></a>
+												<a href=""><img src="img/fb-icon.svg"></a>
+												<a href=""><img src="img/inst-icon.svg"></a>
+											</div>
+	
+									</div>
+
+								</div>
+								
+								<div class="author__text-block">
+									<div class="author__text">
+										<h2 class="author__text_header">
+											Автор курса — Алина Ким
+										</h2>
+										
+									<div class="author__text_mini-block">
+										<span class="author__text_p-number">01</span>
+										<p class="author__text_p1 author__text_p">
+											Продюсер запусков инфопродуктов с общей выручкой за 2020-2021 более 30 млн рублей
+										</p>
+									</div>
+									<div class="author__text_mini-block">
+										<span class="author__text_p-number">02</span>
+										<p class="author__text_p">
+											Автор бестселлера по запускам, который разошёлся тиражом более 1 млн экземпляров
+										</p>
+										</div>
+										<div class="author__text_mini-block">
+										<span class="author__text_p-number">03</span>
+										<p class="author__text_p">
+											Обучила продюсеров, которые проводят самые масштабные запуски в Instagram в СНГ
+										</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+				</div>
+				
+			</section>
+			<footer class="nav_down">
+				<div class="container">
+					<div class="nav-bottom">
+						<div class="nav-bottom__logo">
+							<p class="nav-bottom__logo_text">
+								PROSMM
+							</p>
+						</div>
+						<div class="nav-bottom__politics-confident">
+							<a target="_blank" class="nav-bottom__politics-confident_text nav-bottom__politics-confident_text-top" href="https://docs.google.com/document/d/16kiGIIeS555RScRrk9R2kVRyTFRPe_KN7HuT_Ibh5xI/edit?usp=sharing">Политика<br>конфиденциальности</a>
+							<a class="nav-bottom__politics-confident_text" href="">Соглашение на обработку<br>персональных данных</a>
+						</div>
+						<div class="nav-bottom__block-list" id="menu1">
+							<a class="nav-bottom__block-list_text" href="#forwho">Для кого подходит курс</a>
+							<a class="nav-bottom__block-list_text" href="#learning-program">Программа</a>
+							<a class="nav-bottom__block-list_text" href="#review">Отзывы</a>
+							<a class="nav-bottom__block-list_text" href="#author">Автор</a>
+						</div>
+						<div class="nav-bottom__phone">
+							<button class="nav-bottom__phone_btn" id="btnOpenFormtel" onclick="overflow()">
+								<span class="nav-bottom__phone_btn-text">
+									Заказать звонок
+								</span>
+							</button>
+							<span class="nav-bottom__phone_text">+38 (077) 999 99 99</span>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</div>
+
+	</div>
+		
+	</div>
+	
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+		
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+
+			 $(document).ready(function(){
+			    $("#menu, #menu0, #menu1").on("click","a", function (event) {
+			        event.preventDefault();
+			        var id  = $(this).attr('href'),
+			            top = $(id).offset().top;
+			        $('body,html').animate({scrollTop: top}, 1300);
+			    });
+			});
+			</script>
+			<script>
+				const form_popup_bgid = document.querySelector("#form_popup_bgid");
+        const body = document.querySelector("body");
+        const input = document.querySelector("#inp")
+
+        	 function toggle(){
+    					$(".inp").prop("checked", false);
+						}
+
+         function overflow() {
+            
+  
+            if (!form_popup_bgid.classList.contains("is-visible")) {
+                // Disable scroll
+                body.style.overflow = "hidden";
+            } else {
+                // Enable scroll
+                body.style.overflow = "auto";
+            }
+        };
+				function closeForm() {
+				  $('.form-popup-bg').removeClass('is-visible');
+
+				}
+
+				$(document).ready(function($) {
+				  
+				  /* Contact Form Interactions */
+				  $('#btnOpenForm, #btnOpenFormtel').on('click', function(event) {
+				    event.preventDefault();
+
+				    $('.form-popup-bg').addClass('is-visible');
+				  });
+				  
+				    //close popup when clicking x or off popup
+				  $('.form-popup-bg').on('click', function(event) {
+				  	if (!form_popup_bgid.classList.contains("is-visible")) {
+                // Disable scroll
+                body.style.overflow = "hidden";
+            } else {
+                // Enable scroll
+                body.style.overflow = "auto";
+            }
+				    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+				      event.preventDefault();
+				      $(this).removeClass('is-visible');
+				    }
+				  });
+
+				  });
+			</script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.learning-program__slider').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: false,
+      responsive: [
+      {
+      	breakpoint: 945,
+      	settings:{
+      		slidesToShow:1,
+      	}
+      }
+      ]
+      });
+    });
+  </script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

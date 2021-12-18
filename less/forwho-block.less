@@ -1,0 +1,100 @@
+.forwho-block{
+	padding: 10rem 0 6rem 0;
+    @media (max-width: 490px) {
+        padding: 4rem 0 2rem 0;
+    }
+
+	&_header{
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    @media (max-width: 490px) {
+        margin-bottom: 3rem;
+    }
+    }
+
+    
+	&__cards{
+		padding-top: 5%;
+	display: flex;
+	justify-content: space-between;
+    @media (max-width:945px) {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @media (max-width: 490px) {
+        flex-direction: column;
+        width: 100%;
+    }
+    }
+
+    &__card:nth-child(1){
+    	margin-top: 6rem;
+        margin-right: 2rem;
+        @media (max-width:945px) {
+            margin:0 0 5rem 0;
+        }
+    }
+    &__card:nth-child(2){
+        margin-right: 2rem;
+        @media (max-width:945px) {
+            margin:0 0 5rem 0;
+        }
+    }
+    &__card:nth-child(3){
+    	margin-top: 6rem;
+        margin-right: 2rem;
+        @media (max-width:945px) {
+            margin: 0;
+        }
+    }
+    &__card:nth-child(4){
+        @media (max-width: 490px) {
+            margin-top: 6rem;
+        }
+    }
+
+
+
+    &__card{
+        &_img{
+            @media (max-width: 490px) {
+                width: 100%;
+            }
+        }
+        width: 100%;
+        @media (max-width:945px) {
+            width: 47%;
+        }
+        @media (max-width: 490px) {
+            width: 100%;
+        }
+
+    	&_header{
+    		font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 29px;
+            color: #242121;
+            margin-top: 2rem;
+            @media (max-width:1220px) {
+                margin-top: 1rem;
+            }
+
+    	}
+    	&_text{
+    		font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            line-height: 140%;
+            color: #000000;
+            opacity: 0.6;
+            margin-top: 1.5rem;
+    	}
+    
+
+    } 
+
+}
